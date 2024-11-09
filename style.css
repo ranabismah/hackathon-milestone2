@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite; /* Animation for the background */
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Profile Image */
+.profile {
+    margin-bottom: 10px;
+}
+
+.profile img {
+    border-radius: 50%; /* Circular profile image */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.resume-header h1 {
+    font-size: 36px;
+    color: #007BFF; /* Blue color for name */
+}
+
+.resume-header p {
+    font-size: 18px;
+    color: #555; /* Light grey color for role */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Dark grey color for section headings */
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF; /* Blue color for job titles */
+}
+
+ul li p {
+    font-size: 16px;
+    color: #555; /* Light grey for job descriptions */
+}
+
+ul li span {
+    color: #333;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Keyframe Animation for Gradient Background */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
